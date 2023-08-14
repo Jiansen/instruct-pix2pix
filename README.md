@@ -17,8 +17,10 @@ Follow the instructions below to download and run InstructPix2Pix on your own im
 
 ### Set up a conda environment, and download a pretrained model:
 ```
-conda env create -f environment.yaml
+<!-- conda env create -f environment.yaml -->
+conda env create -f environment_no_pip.yaml
 conda activate ip2p
+pip install -r requirements.txt
 bash scripts/download_checkpoints.sh
 ```
 
